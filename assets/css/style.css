@@ -1,0 +1,15 @@
+.container {
+	padding-top:40px;
+}
+
+h1 {
+	text-align: center;
+}
+
+img.beyonce {
+	padding:40px;
+}
+
+.col-sx-3 {
+	max-width: 50%;
+}

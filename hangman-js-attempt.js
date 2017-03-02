@@ -1,3 +1,5 @@
+
+
 var wordChoices = [ 
 
     "GROWN WOMAN", "BOOTYLICIOUS", "HOLD UP", "BLUE FT BLUE IVY", "FLAWLESS", "ALL NIGHT"
@@ -17,3 +19,5 @@ var random = Math.floor((Math.random()*(wordChoices.length)));
 var word = wordChoices[random]; 
 
 console.log(word);
+
+
