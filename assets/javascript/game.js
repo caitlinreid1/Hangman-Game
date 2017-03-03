@@ -1,19 +1,39 @@
-var wordChoices = [ 
+var wins = 0;
+var guessesRemaining = 6;
+// var currentWord = 
 
-    "GROWN WOMAN", "BOOTYLICIOUS", "HOLD UP", "BLUE FT BLUE IVY", "FLAWLESS", "ALL NIGHT"
+// log the user input
+document.onkeyup = function () {
+	var userGuess = String.fromCharCode(event.keyCode).toUpperCase();
 
+	console.log(userGuess);
 
-
-		// ["G", "R", "O", "W", "N", "W", "O", "M", "A", "N"],
-  // 		["B", "O", "O", "T", "Y", "L", "I", "C", "I", "O", "U", "S"],
- 	// 	["H", "O", "L", "D", "U", "P"],
- 	// 	["B", "L", "U", "E", "F", "T", "B", "L", "U", "E", "I", "V", "Y"],
-  // 		["F", "L", "A", "W", "L", "E", "S", "S"],
-  // 		["A", "L", "L", "N", "I", "G", "H", "T"]
+	var wordChoices = [
+		["grown woman"],
+	 	// 	["holdup"],
+	 	// 	["blue ft blue ivy"],
+	 	// 	["flawless"],
+	  	// 	["all night"]
 	]
+	var computerChoice = wordChoices[Math.floor(Math.random()*wordChoices.length)];
+
+	console.log(computerChoice)
+
+	function myFunction {
+		var str = computerChoice;
+		var res = str.replace(" _ ")
+	}
+
 	
-var random = Math.floor((Math.random()*(wordChoices.length))); 
+	console.log(currentWord);
 
-var word = wordChoices[random]; 
+	if ((computerChoice == "grown woman") && (userGuess === "G" || userGuess === "R" || userGuess === "O" || 
+		userGuess === "W" || userGuess === "N" || userGuess === "M" || userGuess === "A"   )) {
+		console.log("userGuess");	
+	}
+}
 
-console.log(word);
+// GET ELEMENT BY ID 
+
+
+// var currentWord = wordChoices[random]; 

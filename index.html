@@ -11,7 +11,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-	<script type="text/javascript" src="hangman-js-attempt.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
   </head>
 
@@ -22,13 +22,15 @@
 	    		<h1>Press any key to get started! <i class="em em-sparkles"></i></h1>
 	    		<br>
 
-					<p>Letters Already Guessed: </p>
+					<p>Letters Already Guessed: </p> 
 
-					<p>Number of Guesses Remaining: </p>
+					<p>Number of Guesses Remaining: <script>document.write(guessesRemaining)</script> </p>
 						
-					<p>Current Word</p>
+					<p>Current Word: </p>
 
-					<p>Wins: </p>
+					<p id="wins"></p>
+
+					<p id="demo">
 						
 	  		</div>
 		</div>
