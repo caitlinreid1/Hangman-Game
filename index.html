@@ -12,6 +12,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous"></script>
 
   </head>
 
@@ -24,13 +27,14 @@
 
 					<p>Letters Already Guessed: </p> 
 
-					<p>Number of Guesses Remaining: <script>document.write(guessesRemaining)</script> </p>
+					<p>Number of Guesses Remaining: <!-- <script>document.write(guessesRemaining)</script> --> </p>
 						
-					<p>Current Word: </p>
+					<p id="underscore"></p>
+					<p id="field">Current Word: </p>
 
-					<p id="wins"></p>
+					<p id ="wins">Wins:</p>
 
-					<p id="demo">
+					<p id="demo"></p>
 						
 	  		</div>
 		</div>
